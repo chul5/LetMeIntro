@@ -47,9 +47,9 @@ docs/questions.md     과제 평가 문항표
 
 ## 배포
 
-GitHub Pages로 배포 예정입니다. 저장소 원격 주소(`Codyssey2-2/cody2-2Assign`) 기준 예상 URL은 아래와 같으며, Pages 활성화 후 실제 URL로 갱신이 필요합니다.
+GitHub Pages로 배포 예정입니다. 저장소 원격 주소(`chul5/LetMeIntro`) 기준 예상 URL은 아래와 같으며, Pages 활성화 후 실제 URL로 갱신이 필요합니다.
 
-- 배포 URL: _(TODO: GitHub Pages 활성화 후 실제 URL로 교체 — 예상 `https://codyssey2-2.github.io/cody2-2Assign/`)_
+- 배포 URL: _(TODO: GitHub Pages 활성화 후 실제 URL로 교체 — 예상 `https://chul5.github.io/LetMeIntro/`)_
 
 ## 스크린샷
 
