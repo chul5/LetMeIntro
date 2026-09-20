@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" role="img" aria-labelledby="dogTitle">
+  <title id="dogTitle">강아지 프로필 이미지</title>
+  <defs>
+    <linearGradient id="dogBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde68a" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+  </defs>
+
+  <circle cx="100" cy="100" r="100" fill="url(#dogBg)" />
+
+  <!-- ears -->
+  <ellipse cx="55" cy="70" rx="22" ry="32" fill="#8b5e3c" transform="rotate(-25 55 70)" />
+  <ellipse cx="145" cy="70" rx="22" ry="32" fill="#8b5e3c" transform="rotate(25 145 70)" />
+
+  <!-- head -->
+  <circle cx="100" cy="108" r="58" fill="#f4c07a" />
+
+  <!-- snout -->
+  <ellipse cx="100" cy="128" rx="32" ry="22" fill="#fff4e0" />
+
+  <!-- eyes -->
+  <circle cx="78" cy="98" r="7" fill="#3b2417" />
+  <circle cx="122" cy="98" r="7" fill="#3b2417" />
+
+  <!-- nose -->
+  <ellipse cx="100" cy="120" rx="10" ry="7" fill="#3b2417" />
+
+  <!-- mouth -->
+  <path d="M100 127 v8 M100 135 q-14 10 -26 0 M100 135 q14 10 26 0" stroke="#3b2417" stroke-width="3" fill="none" stroke-linecap="round" />
+
+  <!-- cheeks blush -->
+  <circle cx="68" cy="120" r="8" fill="#f4a08a" opacity="0.6" />
+  <circle cx="132" cy="120" r="8" fill="#f4a08a" opacity="0.6" />
+</svg>

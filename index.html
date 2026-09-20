@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>chul5 | Portfolio</title>
+  <meta name="description" content="chul5의 프론트엔드 포트폴리오 웹사이트입니다." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/theme.js" defer></script>
+  <script src="js/nav.js" defer></script>
+  <script src="js/scrollAnimation.js" defer></script>
+  <script src="js/projects.js" defer></script>
+  <script src="js/contact.js" defer></script>
+  <script src="js/typing.js" defer></script>
+</head>
+<body>
+  <header id="header" class="site-header">
+    <nav class="nav-container" aria-label="주 메뉴">
+      <a href="#hero" class="nav-logo">chul5.dev</a>
+
+      <ul id="navMenu" class="nav-menu">
+        <li><a href="#hero">홈</a></li>
+        <li><a href="#about">소개</a></li>
+        <li><a href="#skills">기술</a></li>
+        <li><a href="#projects">프로젝트</a></li>
+        <li><a href="#contact">연락처</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button type="button" id="themeToggle" class="theme-toggle" aria-label="다크 모드로 전환">
+          <span class="theme-icon" aria-hidden="true">🌙</span>
+        </button>
+        <button
+          type="button"
+          id="hamburgerBtn"
+          class="hamburger"
+          aria-label="메뉴 열기"
+          aria-expanded="false"
+          aria-controls="navMenu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero reveal">
+      <h1 id="heroTitle">안녕하세요, 저는 chul5입니다.</h1>
+      <p class="hero-subtitle">
+        도메인에서 다양한 문제를 해결하고 있습니다.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">프로젝트 보기</a>
+        <a href="#contact" class="btn btn-secondary">연락하기</a>
+      </div>
+    </section>
+
+    <section id="about" class="section reveal">
+      <h2 class="section-title">About</h2>
+      <div class="about-content">
+        <img
+          src="images/dog.svg"
+          alt="강아지 프로필 이미지"
+          class="about-photo"
+          width="200"
+          height="200"
+        />
+        <div class="about-text">
+          <p>
+            안녕하세요, 개발자 오철호입니다. 저는 반도체 장비 도메인에서 장비 데이터 분석 및 MES 시스템 개발의 개발리더를 맡고 있습니다.
+          </p>
+          <ul class="about-list">
+            <li>관심 분야: MES 시스템 개발</li>
+            <li>학습 방식: 야생. 만들고 배운다.</li>
+            <li>다음 목표: 2026 4Q MES 배포</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section reveal">
+      <h2 class="section-title">Skills</h2>
+      <ul class="skills-grid">
+        <li class="skill-item">JAVA</li>
+        <li class="skill-item">Spring Boot</li>
+        <li class="skill-item">HTML/CSS/JS</li>
+        <li class="skill-item">Git &amp; GitHub</li>
+        <li class="skill-item">C/C++</li>
+        <li class="skill-item">Python</li>
+        <li class="skill-item">Docker</li>
+        <li class="skill-item">AI</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section reveal">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-subtitle">GitHub API로 불러온 chul5의 저장소 목록입니다.</p>
+
+      <div id="projectFilters" class="project-filters"></div>
+      <div id="projectsContainer" class="projects-grid" aria-live="polite"></div>
+    </section>
+
+    <section id="contact" class="section reveal">
+      <h2 class="section-title">Contact</h2>
+      <form id="contactForm" class="contact-form" novalidate>
+        <div class="form-group">
+          <label for="name">이름</label>
+          <input type="text" id="name" name="name" autocomplete="name" />
+          <span id="nameError" class="error-message" role="alert"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">이메일</label>
+          <input type="email" id="email" name="email" autocomplete="email" />
+          <span id="emailError" class="error-message" role="alert"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="message">메시지</label>
+          <textarea id="message" name="message" rows="5"></textarea>
+          <span id="messageError" class="error-message" role="alert"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">보내기</button>
+        <p id="formSuccess" class="success-message hidden" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer">
+    <p>&copy; 2026 chul5. All rights reserved.</p>
+    <ul class="social-links">
+      <li><a href="https://github.com/chul5" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </footer>
+
+  <button type="button" id="scrollTopBtn" class="scroll-top-btn" aria-label="맨 위로 이동">
+    ↑
+  </button>
+</body>
+</html>
